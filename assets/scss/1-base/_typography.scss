@@ -1,0 +1,36 @@
+// fonts
+$open: "opensans";
+body {
+    font: 400 16px $open;
+    clear: $dark;
+}
+@font-face {
+    font-family: $open;
+    src: url(../fonts/OpenSans-Light.ttf) format("TrueType");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: $open;
+    src: url(../fonts/OpenSans-Regular.ttf) format("TrueType");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $open;
+    src: url(../fonts/OpenSans-Medium.ttf) format("TrueType");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: $open;
+    src: url(../fonts/OpenSans-SemiBold.ttf) format("TrueType");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: $open;
+    src: url(../fonts/OpenSans-Bold.ttf) format("TrueType");
+    font-weight: 700;
+}
+

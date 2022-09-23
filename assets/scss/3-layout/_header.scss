@@ -1,0 +1,123 @@
+.header-top {
+    background-color: $secondary;
+    position: fixed;
+    left: 0;
+    right: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+
+    ol {
+        display: flex;
+        justify-content: end;
+        gap: 27px;
+        list-style: none;
+        li {
+            &.dropdown {
+                a {
+                    .icon {
+                        font-size: 18px;
+                    }
+                }
+            }
+            a {
+                color: $white;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                transition: $transition;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+header {
+    background-color: $white;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 99;
+    &.m-active {
+        .nav {
+            max-height: 300px;
+        }
+    }
+    .mobile-wrap-btn {
+        color: $secondary;
+        font-size: 40px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav {
+        .navbar {
+            display: flex;
+            list-style: none;
+            gap: 38px;
+            font-size: 16px;
+            color: $secondary;
+        }
+    }
+    .search-header {
+        margin-right: 30px;
+        font-size: 24px;
+        color: $primary;
+    }
+}
+
+@include media-down("xl") {
+    header {
+        .nav {
+            .navbar {
+                display: flex;
+                list-style: none;
+                gap: 10px;
+                font-size: 16px;
+                color: $secondary;
+            }
+        }
+    }
+}
+
+@include media-down("md") {
+    .header-top {
+        ol {
+            gap: 15px;
+        }
+    }
+    header {
+        .logo {
+            padding: 20px 0;
+            width: 180px;
+        }
+        .container {
+            flex-wrap: wrap;
+        }
+        .nav {
+            flex-basis: 100%;
+            overflow: hidden;
+            max-height: 0;
+            transition: $transition;
+
+            .navbar {
+                padding-bottom: 20px;
+                flex-direction: column;
+                overflow: auto;
+            }
+        }
+        .search-header {
+            margin-right: 10px;
+        }
+    }
+}

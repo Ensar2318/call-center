@@ -1,0 +1,16 @@
+.page-title-v1 {
+    font: 600 48px $open;
+    margin-top: 85px;
+}
+.sub-title-v1 {
+    font-size: 32px;
+}
+
+@include media-down("lg") {
+    .page-title-v1 {
+        font-size: 32px;
+    }
+    .sub-title-v1 {
+        font-size: 20px;
+    }
+}

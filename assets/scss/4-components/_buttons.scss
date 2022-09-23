@@ -1,0 +1,67 @@
+.btn-primary-phone {
+    background-color: $primary;
+    border-radius: 48px;
+    color: $white;
+    padding: 20px 30px 20px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font: 700 24px $open;
+    i {
+        font-size: 35px;
+    }
+}
+
+.info-rounded {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    .bordered {
+        border: solid 1px #e2e2e2;
+        padding: 10px 45px 10px 10px;
+        border-radius: 30px;
+        color: $primary;
+        margin-right: -40px;
+    }
+    .fill {
+        color: $white;
+        background-color: $primary;
+        border: solid 1px $primary;
+        border-radius: 30px;
+        padding: 10px;
+    }
+}
+
+.btn-redirect {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: $primary;
+    cursor: pointer;
+    font-size: 20px;
+    transition: $transition;
+    &:hover {
+        box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+    }
+    i {
+        font-weight: 600;
+    }
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    background-color: $primary;
+    color: $white;
+    border-radius: 36px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: $transition;
+    display: inline-block;
+    &:hover{
+        background-color: rgba($color: $primary, $alpha: 0.8);
+    }
+}
