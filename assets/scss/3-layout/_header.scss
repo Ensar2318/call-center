@@ -44,8 +44,8 @@ header {
     min-height: 100px;
     display: flex;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px;
+    z-index: 10;
     &.m-active {
         .nav {
             max-height: 300px;
@@ -54,6 +54,7 @@ header {
     .mobile-wrap-btn {
         color: $secondary;
         font-size: 40px;
+        display: none;
     }
     .container {
         display: flex;
@@ -69,10 +70,41 @@ header {
             color: $secondary;
         }
     }
-    .search-header {
-        margin-right: 30px;
-        font-size: 24px;
-        color: $primary;
+    .search-wrap {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .close-search-head {
+            position: absolute;
+            right: 33px;
+            display: none;
+            cursor: pointer;
+        }
+        .search-header {
+            margin-right: 30px;
+            font-size: 24px;
+            color: $primary;
+            cursor: pointer;
+        }
+        .search-input-head {
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+            border-radius: 18px;
+            margin-right: 20px;
+            width: 300px;
+            display: none;
+        }
+        &.active {
+            .close-search-head {
+                display: block;
+            }
+            .search-header {
+                margin-right: 10px;
+            }
+            .search-input-head {
+                display: block;
+            }
+        }
     }
 }
 
@@ -97,6 +129,11 @@ header {
         }
     }
     header {
+        min-height: auto;
+       
+        .mobile-wrap-btn {
+            display: flex;
+        }
         .logo {
             padding: 20px 0;
             width: 180px;
@@ -116,8 +153,33 @@ header {
                 overflow: auto;
             }
         }
+        .search-wrap {
+            .search-input-head {
+                width: 200px;
+            }
+        }
         .search-header {
             margin-right: 10px;
+        }
+    }
+}
+@include media-down("sm"){
+    header{
+        .search-wrap {
+            .search-input-head {
+                width: 160px;
+            }
+        }
+    }
+}
+
+@media(max-width:410px){
+    header{
+        .search-wrap {
+          &.active{
+            padding-bottom: 10px;
+            margin: auto;
+          }
         }
     }
 }

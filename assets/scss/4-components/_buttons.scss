@@ -61,7 +61,123 @@
     font-size: 16px;
     transition: $transition;
     display: inline-block;
-    &:hover{
+    &:hover {
         background-color: rgba($color: $primary, $alpha: 0.8);
+    }
+}
+.dropdown-filter {
+    position: relative;
+    a {
+        display: flex;
+        align-items: center;
+        padding: 12px 12px 12px 18px;
+        border: solid 1px #efefef;
+        border-radius: 60px;
+        transition: $transition;
+
+        &.active {
+            background-color: #efefef;
+            i {
+                transform: rotate(180deg);
+            }
+        }
+        &:hover {
+            background-color: #efefef;
+        }
+        i {
+            position: relative;
+            color: $primary;
+            margin-left: 10px;
+            transition: $transition;
+        }
+    }
+    .dropdown-content {
+        list-style: none;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px;
+        padding: 5px 0;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+        width: 100%;
+        top: 75px;
+        z-index: 10;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            top: 55px;
+        }
+        a {
+            display: block;
+            width: 100%;
+            padding: 0.3rem 1rem;
+            clear: both;
+            font-weight: 400;
+            color: #67748e;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            transition: $transition;
+            &:hover {
+                background-color: rgba($color: #67748e, $alpha: 0.1);
+            }
+        }
+    }
+}
+.dropdown {
+    position: relative;
+    a{
+        &.active{
+            color: $primary;
+        }
+    }
+    .dropdown-content {
+        list-style: none;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px;
+        padding: 5px 0;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition:  0.4s;
+        width: 100%;
+        top: 50px;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            top: 30px;
+        }
+        a {
+            display: block;
+            width: 100%;
+            padding: 0.3rem 1rem;
+            clear: both;
+            font-weight: 400;
+            color: #67748e;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            transition: $transition;
+            &:hover {
+                background-color: rgba($color: #67748e, $alpha: 0.1);
+            }
+        }
+    }
+}
+
+@include media-down("md") {
+    .btn-primary-phone {
+        font-size: 18px;
+        i {
+            font-size: 25px;
+        }
     }
 }

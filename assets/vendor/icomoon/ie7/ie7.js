@@ -24,6 +24,8 @@
 		'icon-clock': '&#xe901;',
 		'icon-search': '&#xe902;',
 		'icon-phone': '&#xe907;',
+		'icon-left-arrow': '&#xe909;',
+		'icon-right-arrow': '&#xe90f;',
 		'icon-chevron-right': '&#xe90b;',
 		'icon-chevron-left': '&#xe90c;',
 		'icon-chevron-down': '&#xe903;',

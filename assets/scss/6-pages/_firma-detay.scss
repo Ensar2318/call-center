@@ -1,0 +1,114 @@
+.company-infos {
+    .company-title {
+        font: 600 42px $open;
+        margin-bottom: 25px;
+    }
+    p {
+        font: 600 16px $open;
+        line-height: 28px;
+        color: #676767;
+    }
+    .p-t-42 {
+        padding-top: 42px;
+    }
+
+    .p-b-42 {
+        padding-bottom: 42px;
+    }
+    .keywords {
+        h4 {
+            font: 700 18px $open;
+            color: #003f6d;
+        }
+    }
+}
+.lists {
+    padding: 32px;
+    list-style: none;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &.secondary-300 {
+        color: $secondary-300;
+    }
+    &.secondary {
+        color: $secondary;
+    }
+    &.rounded-18 {
+        border-radius: 18px;
+    }
+    &.other-padding {
+        padding: 28px 45px;
+    }
+    font: 600 18px $open;
+    h6 {
+        margin-bottom: 10px;
+        font: 600 18px $open;
+    }
+}
+.detail-table {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    td {
+        border: solid 1px #dedede;
+        padding: 14px 16px;
+        font: 600 14px $open;
+        color: $secondary;
+        vertical-align: middle;
+    }
+}
+
+.image-company {
+    border-radius: 18px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-detail {
+    background-color: #f9f9f9;
+    padding: 44px 55px;
+    border-radius: 18px;
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        font: 700 24px $open;
+        color: $secondary;
+        margin-bottom: 44px;
+
+        i {
+            color: $primary;
+            font-size: 44px;
+        }
+    }
+}
+.other-detail-table {
+    width: 100%;
+    &.first-w {
+        td {
+            &:first-child {
+                width: 35%;
+                vertical-align: baseline;
+            }
+        }
+    }
+    tr {
+        font: 600 16px $open;
+        color: $secondary;
+        td {
+            padding-bottom: 25px;
+
+            &:first-child {
+                color: #888888;
+            }
+        }
+    }
+}
+
+@include media-down("md") {
+    .card-detail {
+        padding: 30px 30px 20px 30px;
+    }
+}

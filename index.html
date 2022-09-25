@@ -24,18 +24,31 @@
             <ol>
                 <li><a href="">ACTIVITEITENGEBIEDEN</a></li>
                 <li><a href="">ALL NUMBERS</a></li>
-                <li class="dropdown"><a href="">EN <i class=" ms-2 icon-world icon"></i> <i
-                            class=" ms-1 icon icon-chevron-down"></i></a></li>
+                <li class="dropdown">
+                    <a dropdown-target="#lang" href="">EN
+                        <i class=" ms-2 icon-world icon"></i>
+                        <i class="ms-1 icon icon-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-content text-center" id="lang">
+                        <li><a href="index.html">EN</a></li>
+                        <li><a href="">GB</a></li>
+                        <li><a href="">TR</a></li>
+                    </ul>
+                </li>
             </ol>
         </div>
     </div>
     <header>
         <div class="container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <img src="assets/img/logo-header.svg" alt="logo">
-            </div>
-            <i class="icon-search search-header ms-auto"></i>
-            <i class="mobile-wrap-btn icon-menu-line d-flex d-md-none"></i>
+            </a>
+            <form method="get" action="firma-kategorisi.html" class="ms-auto search-wrap" >
+                <a href="#" class="search-header"><i class="icon-search "></i></a>
+                <input class="search-input-head" name="search" type="text" placeholder="Search Something..">
+                <span class="close-search-head">&#10005;</span>
+            </form>
+            <i class="mobile-wrap-btn icon-menu-line"></i>
             <nav class="nav">
                 <ol class="navbar">
                     <li><a class="nav-link" href="">ACCUEIL</a></li>
@@ -70,8 +83,8 @@
     <section class=" pt-4">
         <div class="container">
             <p class="text-secondary fs-xs-30 text-center mb-3">Firma arayın</p>
-            <form class="search-input mb-5">
-                <button><i class="icon-search"></i></button><input type="text" placeholder="Hemen bir ürün arayın...">
+            <form action="firma-kategorisi.html" method="GET" class="search-input mb-5">
+                <button><i class="icon-search"></i></button><input type="text" name="search" placeholder="Hemen bir ürün arayın...">
             </form>
             <h4 class="fs-24 text-secondary-light mb-2">Ausgewählte Unternehmen</h4>
             <p class="fs-14 text-muted">Trouver facilement le numéro non surtaxé d’un service client </p>
@@ -88,34 +101,34 @@
                         <div class="company-card">
                             <h5 class="card-title">Amazon</h5>
                             <img src="assets/img/brands/amazon.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Ebay</h5>
                             <img src="assets/img/brands/ebay.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Nestle</h5>
                             <img src="assets/img/brands/nestle.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Microsoft</h5>
                             <img src="assets/img/brands/microsoft.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mt-5 text-center">
-                <a href="#" class="btn-primary">View All Brand Any Category of Lists</a>
+                <a href="firma-kategorisi.html" class="btn-primary">View All Brand Any Category of Lists</a>
             </div>
 
             <!-- Swiper 2 -->
@@ -129,34 +142,34 @@
                         <div class="company-card">
                             <h5 class="card-title">Amazon</h5>
                             <img src="assets/img/brands/amazon.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Ebay</h5>
                             <img src="assets/img/brands/ebay.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Nestle</h5>
                             <img src="assets/img/brands/nestle.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Microsoft</h5>
                             <img src="assets/img/brands/microsoft.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mt-5 text-center">
-                <a href="#" class="btn-primary">View All Brand Any Category of Lists</a>
+                <a href="firma-kategorisi.html" class="btn-primary">View All Brand Any Category of Lists</a>
             </div>
             <!-- Swiper 3 -->
             <div class="mb-3 d-flex justify-content-end gap-5 mt-3 mt-lg-0">
@@ -169,34 +182,34 @@
                         <div class="company-card">
                             <h5 class="card-title">Amazon</h5>
                             <img src="assets/img/brands/amazon.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Ebay</h5>
                             <img src="assets/img/brands/ebay.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Nestle</h5>
                             <img src="assets/img/brands/nestle.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Microsoft</h5>
                             <img src="assets/img/brands/microsoft.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mt-5 text-center">
-                <a href="#" class="btn-primary">View All Brand Any Category of Lists</a>
+                <a href="firma-kategorisi.html" class="btn-primary">View All Brand Any Category of Lists</a>
             </div>
             <!-- Swiper 4 -->
             <div class="mb-3 d-flex justify-content-end gap-5 mt-3 mt-lg-0">
@@ -209,41 +222,41 @@
                         <div class="company-card">
                             <h5 class="card-title">Amazon</h5>
                             <img src="assets/img/brands/amazon.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Ebay</h5>
                             <img src="assets/img/brands/ebay.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Nestle</h5>
                             <img src="assets/img/brands/nestle.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="company-card">
                             <h5 class="card-title">Microsoft</h5>
                             <img src="assets/img/brands/microsoft.svg" />
-                            <a class="btn-detail" href="#">Detail <i class="icon-chevron-right"></i></a>
+                            <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mt-5 text-center">
-                <a href="#" class="btn-primary">View All Brand Any Category of Lists</a>
+                <a href="firma-kategorisi.html" class="btn-primary">View All Brand Any Category of Lists</a>
             </div>
         </div>
     </section>
     <!-- Search Company END -->
 
     <!-- =========== best brands  =========== -->
-    <section>
+    <section class="pt-5">
         <div class="container text-center">
             <h4 class="sub-title-v1 font-600 mb-10">Beliebte Marken</h4>
             <p class="fs-24">Trouver facilement le numéro non surtaxé d’un service client </p>
