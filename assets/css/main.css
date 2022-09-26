@@ -1678,6 +1678,7 @@ footer .links a {
   font-weight: 600;
   font-size: 18px;
   color: #505767;
+  word-break: break-all;
 }
 .company-card .btn-detail {
   padding: 7px;
