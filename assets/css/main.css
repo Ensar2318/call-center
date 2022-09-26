@@ -1325,6 +1325,7 @@ header .search-wrap.active .search-input-head {
   }
   header .logo {
     padding: 20px 0;
+    width: 160px;
   }
   header .container {
     flex-wrap: wrap;
