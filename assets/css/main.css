@@ -1216,7 +1216,7 @@ section {
 
 @media (max-width: 767px) {
   .first-section {
-    padding-top: 60px;
+    padding-top: 10px;
   }
 }
 body:not(.page-loaded) {
