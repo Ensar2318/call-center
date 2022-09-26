@@ -1486,17 +1486,17 @@ footer .links a {
   font-weight: 600;
 }
 .info-rounded .bordered {
-  border: solid 1px #e2e2e2;
   padding: 10px 45px 10px 10px;
-  border-radius: 30px;
+  border-radius: 4px;
   color: #ea8c1c;
+  border: solid 1px #e2e2e2;
   margin-right: -40px;
 }
 .info-rounded .fill {
   color: #ffffff;
   background-color: #ea8c1c;
   border: solid 1px #ea8c1c;
-  border-radius: 30px;
+  border-radius: 4px;
   padding: 10px;
 }
 
