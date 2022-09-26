@@ -1895,16 +1895,20 @@ footer .links a {
 }
 
 .lists {
-  padding: 32px;
+  padding: 16px 20px 20px;
   list-style: none;
   background-color: #fafafa;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 5px;
-  font: 600 18px "opensans";
+  font: 600 12.6px "opensans";
 }
 .lists.default {
-  color: #676767;
+  color: #1f7294;
+}
+.lists.default a:hover {
+  text-decoration: underline;
+  color: #3175e4;
 }
 .lists.secondary {
   color: #003f6d;
@@ -1917,7 +1921,7 @@ footer .links a {
 }
 .lists h6 {
   margin-bottom: 10px;
-  font: 600 18px "opensans";
+  font: 600 14px "opensans";
 }
 
 .detail-table {
