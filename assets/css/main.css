@@ -55,6 +55,7 @@ table {
 body {
   font: 400 16px "opensans";
   clear: #000000;
+  font-display: fallback;
 }
 
 @font-face {

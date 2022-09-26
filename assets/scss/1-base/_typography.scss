@@ -3,6 +3,7 @@ $open: "opensans";
 body {
     font: 400 16px $open;
     clear: $dark;
+    font-display: fallback;
 }
 @font-face {
     font-family: $open;
