@@ -1323,9 +1323,6 @@ header .search-wrap.active .search-input-head {
   header .mobile-wrap-btn {
     display: flex;
   }
-  header .logo {
-    display: none;
-  }
   header .container {
     flex-wrap: wrap;
   }
