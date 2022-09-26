@@ -8,3 +8,9 @@ section{
 .first-section{
     padding-top: 164px;
 }
+
+@include media-down("md"){
+    .first-section{
+        padding-top: 120px;
+    }
+}
