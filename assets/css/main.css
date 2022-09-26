@@ -1890,7 +1890,7 @@ footer .links a {
 }
 .company-infos .keywords h4 {
   font: 700 18px "opensans";
-  color: #003f6d;
+  color: #676767;
 }
 
 .lists {
@@ -1902,8 +1902,8 @@ footer .links a {
   gap: 5px;
   font: 600 18px "opensans";
 }
-.lists.secondary-300 {
-  color: #20799a;
+.lists.default {
+  color: #676767;
 }
 .lists.secondary {
   color: #003f6d;

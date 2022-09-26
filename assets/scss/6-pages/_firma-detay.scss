@@ -18,7 +18,7 @@
     .keywords {
         h4 {
             font: 700 18px $open;
-            color: #003f6d;
+            color: #676767;
         }
     }
 }
@@ -29,8 +29,9 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    &.secondary-300 {
-        color: $secondary-300;
+    
+    &.default {
+        color: #676767;
     }
     &.secondary {
         color: $secondary;
