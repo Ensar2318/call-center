@@ -96,7 +96,7 @@ header {
 @include media-down("md") {
     .lang-wrap {
         border-left: none;
-        margin: 20px 20px 20px 0;
+        margin: 20px 0;
         a {
             .icon {
                 font-size: 18px;
@@ -114,7 +114,9 @@ header {
         .mobile-wrap-btn {
             display: flex;
         }
-     
+        .logo {
+            padding: 20px 0;
+        }
         .container {
             flex-wrap: wrap;
         }

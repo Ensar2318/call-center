@@ -1309,7 +1309,7 @@ header .search-wrap.active .search-input-head {
 @media (max-width: 767px) {
   .lang-wrap {
     border-left: none;
-    margin: 20px 20px 20px 0;
+    margin: 20px 0;
   }
   .lang-wrap a .icon {
     font-size: 18px;
@@ -1322,6 +1322,9 @@ header .search-wrap.active .search-input-head {
   }
   header .mobile-wrap-btn {
     display: flex;
+  }
+  header .logo {
+    padding: 20px 0;
   }
   header .container {
     flex-wrap: wrap;
