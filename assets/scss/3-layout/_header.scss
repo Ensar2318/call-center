@@ -1,44 +1,15 @@
-.header-top {
-    background-color: $secondary;
-    position: fixed;
-    left: 0;
-    right: 0;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    z-index: 99;
-
-    ol {
-        display: flex;
-        justify-content: end;
-        gap: 27px;
-        list-style: none;
-        li {
-            &.dropdown {
-                a {
-                    .icon {
-                        font-size: 18px;
-                    }
-                }
-            }
-            a {
-                color: $white;
-                font-size: 14px;
-                display: flex;
-                align-items: center;
-                transition: $transition;
-                &:hover {
-                    color: $primary;
-                }
-            }
+.lang-wrap {
+    margin-right: 20px;
+    a {
+        .icon {
+            font-size: 18px;
         }
     }
 }
-
 header {
     background-color: $white;
     position: fixed;
-    top: 60px;
+    top: 0px;
     left: 0;
     right: 0;
     min-height: 100px;
@@ -123,6 +94,15 @@ header {
 }
 
 @include media-down("md") {
+    .lang-wrap {
+        border-left: none;
+        margin: 20px 20px 20px 0;
+        a {
+            .icon {
+                font-size: 18px;
+            }
+        }
+    }
     .header-top {
         ol {
             gap: 15px;
@@ -130,13 +110,12 @@ header {
     }
     header {
         min-height: auto;
-       
+
         .mobile-wrap-btn {
             display: flex;
         }
         .logo {
-            padding: 20px 0;
-            width: 180px;
+            display: none;
         }
         .container {
             flex-wrap: wrap;
@@ -153,33 +132,7 @@ header {
                 overflow: auto;
             }
         }
-        .search-wrap {
-            .search-input-head {
-                width: 200px;
-            }
-        }
-        .search-header {
-            margin-right: 10px;
-        }
-    }
-}
-@include media-down("sm"){
-    header{
-        .search-wrap {
-            .search-input-head {
-                width: 160px;
-            }
-        }
+      
     }
 }
 
-@media(max-width:410px){
-    header{
-        .search-wrap {
-          &.active{
-            padding-bottom: 10px;
-            margin: auto;
-          }
-        }
-    }
-}

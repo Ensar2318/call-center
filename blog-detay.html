@@ -20,38 +20,26 @@
 </head>
 
 <body>
-
+ 
     <!-- =========== Header Side =========== -->
-    <div class="header-top">
-        <div class="container">
-            <ol>
-                <li><a href="">ACTIVITEITENGEBIEDEN</a></li>
-                <li><a href="">ALL NUMBERS</a></li>
-                <li class="dropdown">
-                    <a dropdown-target="#lang" href="">EN
-                        <i class=" ms-2 icon-world icon"></i>
-                        <i class="ms-1 icon icon-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown-content text-center" id="lang">
-                        <li><a href="index.html">EN</a></li>
-                        <li><a href="">GB</a></li>
-                        <li><a href="">TR</a></li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-    </div>
     <header>
         <div class="container">
             <a href="index.html" class="logo">
                 <img src="assets/img/logo-header.svg" width="240px" height="55px" alt="logo">
             </a>
-            <form method="get" action="firma-kategorisi.html" class="ms-auto search-wrap">
-                <a href="#" class="search-header"><i class="icon-search "></i></a>
-                <input class="search-input-head" name="search" type="text" placeholder="Search Something..">
-                <span class="close-search-head">&#10005;</span>
-            </form>
-            <i class="mobile-wrap-btn icon-menu-line"></i>
+            <div class="dropdown lang-wrap  ms-auto">
+                <a dropdown-target="#lang" href="">EN
+                    <i class=" ms-2 icon-world icon"></i>
+                    <i class="ms-1 icon icon-chevron-down"></i>
+                </a>
+                <ul class="dropdown-content text-center" id="lang">
+                    <li><a href="index.html">EN</a></li>
+                    <li><a href="">GB</a></li>
+                    <li><a href="">TR</a></li>
+                </ul>
+            </div>
+            <i class="mobile-wrap-btn icon-menu-line "></i>
+
             <nav class="nav">
                 <ol class="navbar">
                     <li><a class="nav-link" href="">ACCUEIL</a></li>
@@ -60,6 +48,7 @@
                     <li><a class="nav-link" href="">CONTACT</a></li>
                 </ol>
             </nav>
+
         </div>
     </header>
     <!-- Header Side END -->
@@ -270,7 +259,13 @@
     <!-- Footer Side END -->
 
 
-
+    <a href="tel:368988378" class="footer-call-btn">
+        <div class="phone"><i class="icon-phone"></i> Appelez le 3689 88 378</div>
+        <div class="row infos">
+            <div class="col-4 bg-white text-secondary"><span>3689 88 378</span></div>
+            <div class="col-8 bg-secondary"><span>Service 0,80€/min + prix appel</span></div>
+        </div>
+    </a>
 
 
 

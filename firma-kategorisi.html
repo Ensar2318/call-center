@@ -22,36 +22,25 @@
 <body>
 
     <!-- =========== Header Side =========== -->
-    <div class="header-top">
-        <div class="container">
-            <ol>
-                <li><a href="">ACTIVITEITENGEBIEDEN</a></li>
-                <li><a href="">ALL NUMBERS</a></li>
-                <li class="dropdown">
-                    <a dropdown-target="#lang" href="">EN
-                        <i class=" ms-2 icon-world icon"></i>
-                        <i class="ms-1 icon icon-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown-content text-center" id="lang">
-                        <li><a href="index.html">EN</a></li>
-                        <li><a href="">GB</a></li>
-                        <li><a href="">TR</a></li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-    </div>
     <header>
         <div class="container">
             <a href="index.html" class="logo">
                 <img src="assets/img/logo-header.svg" width="240px" height="55px" alt="logo">
             </a>
-            <form method="get" action="firma-kategorisi.html" class="ms-auto search-wrap">
-                <a href="#" class="search-header"><i class="icon-search "></i></a>
-                <input class="search-input-head" name="search" type="text" placeholder="Search Something..">
-                <span class="close-search-head">&#10005;</span>
-            </form>
-            <i class="mobile-wrap-btn icon-menu-line"></i>
+
+            <div class="dropdown lang-wrap  ms-auto">
+                <a dropdown-target="#lang" href="">EN
+                    <i class=" ms-2 icon-world icon"></i>
+                    <i class="ms-1 icon icon-chevron-down"></i>
+                </a>
+                <ul class="dropdown-content text-center" id="lang">
+                    <li><a href="index.html">EN</a></li>
+                    <li><a href="">GB</a></li>
+                    <li><a href="">TR</a></li>
+                </ul>
+            </div>
+            <i class="mobile-wrap-btn icon-menu-line "></i>
+
             <nav class="nav">
                 <ol class="navbar">
                     <li><a class="nav-link" href="">ACCUEIL</a></li>
@@ -60,6 +49,7 @@
                     <li><a class="nav-link" href="">CONTACT</a></li>
                 </ol>
             </nav>
+
         </div>
     </header>
     <!-- Header Side END -->
@@ -67,9 +57,9 @@
     <!-- =========== Search Company  =========== -->
     <section class="first-section">
         <div class="container">
-            <p class="text-primary fs-xs-30 fs-lg-42 text-center mb-5 mt-5">Firmalar</p>
+            <p class="text-primary fs-xs-30 fs-lg-42 text-center mb-5 mt-5 d-md-block d-none">Firmalar</p>
             <div
-                class="d-flex justify-content-center justify-content-sm-between  flex-sm-nowrap flex-wrap align align-items-center  mb-4">
+                class="d-flex justify-content-center justify-content-sm-between  flex-sm-nowrap flex-wrap align align-items-center mt-5 mt-md-0  mb-4">
                 <h3 class="fs-lg-30 fs-xs-24 text-secondary font-400 mb-4 mb-sm-0">Firma arayın</h3>
                 <div class="d-flex flex-sm-nowrap flex-wrap gap-20 justify-content-center justify-content-sm-start">
                     <div class="dropdown-filter">
@@ -101,112 +91,112 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Amazon</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/amazon.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/amazon.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Ebay</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/ebay.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/ebay.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Nestle</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/nestle.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/nestle.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Microsoft</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/microsoft.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/microsoft.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Amazon</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/amazon.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/amazon.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Ebay</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/ebay.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/ebay.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Nestle</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/nestle.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/nestle.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Microsoft</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/microsoft.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/microsoft.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Amazon</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/amazon.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/amazon.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Ebay</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/ebay.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/ebay.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Nestle</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/nestle.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/nestle.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Microsoft</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/microsoft.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/microsoft.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Amazon</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/amazon.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/amazon.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Ebay</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/ebay.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/ebay.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Nestle</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/nestle.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/nestle.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 searchable">
                     <div class="company-card">
                         <h5 class="card-title">Microsoft</h5>
-                        <img  width="150px" height="50px" src="assets/img/brands/microsoft.svg" />
+                        <img width="150px" height="50px" src="assets/img/brands/microsoft.svg" />
                         <a class="btn-detail" href="firma-detay.html">Detail <i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
@@ -315,7 +305,13 @@
         </div>
     </div>
     <!-- Footer Side END -->
-
+    <a href="tel:368988378" class="footer-call-btn">
+        <div class="phone"><i class="icon-phone"></i> Appelez le 3689 88 378</div>
+        <div class="row infos">
+            <div class="col-4 bg-white text-secondary"><span>3689 88 378</span></div>
+            <div class="col-8 bg-secondary"><span>Service 0,80€/min + prix appel</span></div>
+        </div>
+    </a>
 
 
 
