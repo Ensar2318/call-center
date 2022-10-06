@@ -27,6 +27,12 @@ $(document).ready(function () {
         $("#search").val(searhData);
     }
 
+    $(".collapses .collapse-item .collapse-head").click(function (e) {
+        e.preventDefault();
+        $(this).parent().toggleClass("active");
+        console.log("sa");
+    });
+
 
     let elDropdown = $("[dropdown-target]");
     $(elDropdown).each(function (index, element) {

@@ -30,15 +30,14 @@
     flex-direction: column;
     gap: 5px;
 
-    
     &.default {
         color: #1f7294;
-       a{
-        &:hover{
-            text-decoration: underline;
-            color: #3175e4;
+        a {
+            &:hover {
+                text-decoration: underline;
+                color: #3175e4;
+            }
         }
-       }
     }
     &.secondary {
         color: $secondary;
@@ -127,5 +126,74 @@
             margin-bottom: 5px;
         }
     }
-   
+}
+
+.firma-detay-title {
+    font: 700 18px $open;
+    color: $secondary;
+}
+.firma-detay-input {
+    margin-top: 10px;
+    border: solid 1px #dedede;
+    height: 46px;
+    padding: 0 26px;
+    width: 100%;
+    border-radius: 12px;
+    color: $secondary;
+    font: 600 18px $open;
+    &::placeholder {
+        color: $secondary;
+        font: 600 20px $open;
+    }
+}
+.firma-detay-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    a {
+        font: 600 18px $open;
+        color: $secondary;
+    }
+}
+
+.collapse-item {
+    border: solid 1px #f0f0f0;
+    border-radius: 12px;
+    padding: 17px 26px;
+    margin-bottom: 20px;
+    &.active {
+        .collapse-content {
+            max-height: max-content;
+        }
+        .collapse-head {
+            .downiocn {
+                rotate: 180deg;
+            }
+        }
+    }
+    .collapse-head {
+        font: 600 18px $open;
+        color: #257393;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .downiocn {
+            color: $primary;
+            font-size: 20px;
+            transition: 0.6s;
+            position: relative;
+        }
+    }
+    .collapse-content {
+        overflow: hidden;
+        max-height: 0px;
+        transition: 0.5s;
+        p {
+            margin-top: 15px;
+            font: 600 14px $open;
+            line-height: 24px;
+            color: #666666;
+        }
+    }
 }
